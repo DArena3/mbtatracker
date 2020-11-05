@@ -77,8 +77,10 @@ def main():
                         print("The next train to " + terminus + " is now arriving.")
                     elif i == 0:
                         print("The next train to " + terminus + " arrives in " + time + minute)
+                    elif time.isnumeric():
+                        print("The following train to " + terminus + " arrives in " + time + minute)
                     else:
-                        print ("The following train to " + terminus + " arrives in " + time + minute)
+                        print("Status of next train: " + time)
                 print("-" * 60)
                 
     print()
